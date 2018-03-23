@@ -1,11 +1,19 @@
 # superrocket
-
-
-Short Description:
----
+ 
 A supervisord process notification for rocketchat.
 
 This project has been highly inspired from the [superslacker](https://github.com/MTSolutions/superslacker) project.
+
+## Installation
+```
+pip install superrocket
+```
+
+## Current Stable Version
+```
+0.2.0
+```
+
 
 ## Usage:
 To use it with supervisor put this as a plugin in your `supervisor.conf`
@@ -42,15 +50,6 @@ optional arguments:
 ```
 
 
-## Current Stable Version
-```
-0.2.0
-```
-## Installation
-### via pip
-```
-pip install superrocket
-```
 ### Development Installation
 * Clone the project.
 * Install in Anaconda3 environment
