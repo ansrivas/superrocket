@@ -25,7 +25,7 @@ test_requires = ['pytest', 'pytest-sugar', 'pytest-cov', ]
 
 setup(
     name='superrocket',
-    description="Some description about your project",
+    description="A supervisord process notification for rocketchat.",
     long_description=long_description,
     version=get_version(),
     include_package_data=True,
