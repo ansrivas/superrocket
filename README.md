@@ -1,8 +1,5 @@
 # superrocket
-
-
-Short Description:
----
+ 
 A supervisord process notification for rocketchat.
 
 This project has been highly inspired from the [superslacker](https://github.com/MTSolutions/superslacker) project.
