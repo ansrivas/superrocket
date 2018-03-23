@@ -44,7 +44,7 @@ optional arguments:
 
 ## Current Stable Version
 ```
-0.1.0
+0.2.0
 ```
 ## Installation
 ### via pip
@@ -69,9 +69,5 @@ To run the tests:
 make test
 ```
 
-## Examples
-```
-$ python examples/simple.py
-```
 ## License
 See the LICENSE and Copyright.txt files.
