@@ -40,6 +40,7 @@ setup(
     ''',
     author="Ankur Srivastava",
     author_email="ankur.srivastava@email.de",
+    url='https://github.com/ansrivas/superrocket',
     download_url="https://github.com/ansrivas/superrocket/archive/{0}.tar.gz".format(get_version()),
     classifiers=[
         "Programming Language :: Python :: 2",
