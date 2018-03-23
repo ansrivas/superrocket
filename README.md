@@ -20,7 +20,7 @@ events=PROCESS_STATE,TICK_60
 ## Options:
 ```
 usage: superrocket [-h] -c CHANNEL -w WEBHOOK [-a ATTACHMENT] [-n HOSTNAME]
-                   [-b BOTNAME] [-k]
+                   [-b BOTNAME] [-e EMOJI] [-k]
 
 Send messages from supervisor state changes, to RocketChat
 
@@ -36,6 +36,8 @@ optional arguments:
                         System Hostname
   -b BOTNAME, --botname BOTNAME
                         Default username for the bot
+  -e EMOJI, --emoji EMOJI
+                        Default emoji to show for the bot
   -k, --insecure        Skip RocketChat server certificate verification
 ```
 
