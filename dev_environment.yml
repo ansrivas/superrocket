@@ -1,0 +1,13 @@
+name: superrocket
+channels:
+  - defaults
+dependencies:
+- python=2.7
+- pip:
+  - pylama
+  - autopep8
+  - yapf
+  - cython
+  - future
+  - twine
+  - m2r
