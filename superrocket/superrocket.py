@@ -30,6 +30,7 @@ class SuperRocket(ProcessStateMonitor):
         self.webhook = kwargs.get('webhook')
         self.attachment = kwargs.get('attachment', None)
         self.insecure = kwargs.get('insecure')
+        self.emoji = kwargs.get('emoji')
 
     @classmethod
     def __setup_args(cls):
@@ -41,6 +42,7 @@ class SuperRocket(ProcessStateMonitor):
         parser.add_argument("-a", "--attachment", help="RocketChat attachment text")
         parser.add_argument("-n", "--hostname", default=socket.gethostname(), help="System Hostname")
         parser.add_argument("-b", "--botname", default="superrocket", help="Default username for the bot")
+        parser.add_argument("-e", "--emoji", default=":sos:", help="Default emoji to show for the bot")
         parser.add_argument("-k", "--insecure", action="store_true", default=False,
                             help="Skip RocketChat server certificate verification")
 
@@ -109,7 +111,7 @@ class SuperRocket(ProcessStateMonitor):
                 'channel': message['channel'],
                 'text': msg,
                 'username': self.botname,
-                'emoji': ':sos:',
+                'emoji': self.emoji,
                 'attachments': [{"text": message['attachment'], "color": "#ff0000"}],
             }
             # 'attachments': [{"text": message['attachment'], "color": "#ff0000"}],
