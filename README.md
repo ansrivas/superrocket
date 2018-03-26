@@ -1,5 +1,5 @@
 # superrocket
- 
+
 A supervisord process notification for rocketchat.
 
 This project has been highly inspired from the [superslacker](https://github.com/MTSolutions/superslacker) project.
@@ -11,7 +11,7 @@ pip install superrocket
 
 ## Current Stable Version
 ```
-0.2.0
+0.3.0
 ```
 
 
@@ -24,6 +24,14 @@ command=superslacker --webhook="your-complete-rocketchat-webhook" --channel="#no
 events=PROCESS_STATE,TICK_60
 ```
 
+To use it standalone:
+
+```
+from superrocket.api import Api
+
+api = Api(channel='#general', webhook='my_webhook_url')
+api.send("```This is my markdown enabled message```")
+```
 
 ## Options:
 ```
