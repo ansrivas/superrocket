@@ -18,8 +18,6 @@ class Api(object):
             hostname (str): A hostname to represent where the message is being sent from
             botname (str) : Readable botname for this bot, defaults to superrocket
             emoji (str)   : Default emoji to be published with this message
-        Returns:
-
         """
         self.channel = channel
         self.webhook = webhook
