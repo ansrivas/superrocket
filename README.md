@@ -19,7 +19,7 @@ pip install superrocket
 To use it with supervisor put this as a plugin in your `supervisor.conf`
 
 ```
-[eventlistener:superslacker]
+[eventlistener:superrocket]
 command=superslacker --webhook="your-complete-rocketchat-webhook" --channel="#notifications" --hostname="HOST"
 events=PROCESS_STATE,TICK_60
 ```
